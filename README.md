@@ -29,6 +29,15 @@ const App = () => {
 export default App
 ```
 
+## Contribute
+
+- Fork or Clone this Repository.
+- Navigate `cd react-devdotto`.
+- run `npm install` to install all required dependencies.
+- Make changes and commit them.
+- Open a pull request to `master` or `v***` branch.<br>
+Now lemme buy you a coffee :coffee:.
+
 ## License
 
 MIT © [genialkartik](https://github.com/genialkartik)
