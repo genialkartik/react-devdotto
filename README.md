@@ -34,7 +34,8 @@ export default App
 - Fork or Clone this Repository.
 - Navigate `cd react-devdotto`.
 - run `npm install` to install all required dependencies.
-- Make changes and commit them.
+- Make changes or fix bug.
+- Make sure to run build `npm build` before commiting all changes.
 - Open a pull request to `master` or `v***` branch.<br>
 Now lemme buy you a coffee :coffee:.
 
