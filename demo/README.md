@@ -2,18 +2,16 @@
 
 > Embed your Posts on Dev.to into your React Project.
 
-## To Test Demo:
+## Demo:
 
-## Install
+### Create & install dependencies:
 
 ```bash
 	create-react-app devdotto
 	npm install --save react-devdotto
 ```
 
-## Usage
-
-### Edit scr/App.js
+### Edit scr/App.js:
 ```jsx
 
 import React from 'react';
@@ -30,7 +28,7 @@ function App() {
 
 export default App;
 ```
-## Run your App
+### Run your App:
 ```bash
 	npm start
 ```
