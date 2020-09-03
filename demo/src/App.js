@@ -1,6 +1,5 @@
 import React from 'react';
 import DevDotTo from 'react-devdotto';
-import './App.css';
 
 function App() {
   return (
