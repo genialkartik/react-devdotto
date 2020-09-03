@@ -1,0 +1,41 @@
+{
+  "name": "react-devdotto",
+  "version": "1.2.7",
+  "private": false,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "publish:npm": "rimraf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "^3.4.3"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "keywords": [
+    "react-devdotto",
+    "blogs",
+    "articles",
+    "react",
+    "dev.to"
+  ],
+  "author": "Kartik Tyagi <kartik9756@gmail.com>",
+  "license": "ISC"
+}

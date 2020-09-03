@@ -1,0 +1,96 @@
+/* Dev.to */
+
+.devcontainer {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.devcontainer a {
+  text-decoration: none;
+}
+
+.devitem {
+  position: relative;
+  width: 550px;
+  height: 90%;
+  border-radius: 8px;
+  border: 2px solid #7c7c7c;
+  background-color: #1A2634;
+  margin-bottom: 45px;
+  margin-right: 70px;
+  box-shadow: 5px 5px 10px #00000088;
+}
+
+.devblogimg {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  border-radius: 7px 7px 0 0;
+}
+
+.devdetails{
+  position: relative;
+  padding: 0px 40px;
+  text-align: left;
+}
+
+.devheading {
+  font-size: 1.4rem;
+  overflow: hidden;
+  color: #fff;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  /* number of lines to show */
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.devdescription {
+  font-size: 1rem;
+  color: black;
+}
+
+.devtags {
+  position: relative;
+  color: #a09e9e;
+  overflow: hidden;
+  top: -10px;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.devreact {
+  display: flex;
+  flex-direction: row;
+}
+.devicons {
+  width: 81%;
+  filter: opacity(0.6);
+  display: flex;
+  flex-direction: row;
+}
+
+.devicons p {
+  margin-right: 30px;
+  color: white;
+}
+
+.devicons p span {
+  position: relative;
+  top: -3px;
+  margin-right: 3px;
+  margin-left: 7px;
+}
+
+.postpublishdate {
+  color: white;
+  opacity: .6;
+  padding-top: 20px;
+}
+
+.devopen:hover {
+  cursor: pointer;
+}
