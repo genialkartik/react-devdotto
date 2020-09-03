@@ -2,7 +2,7 @@
 
 > Embed your Posts on Dev.to into your React Project.
 
-[![NPM](https://img.shields.io/npm/v/react-devdotto.svg)](https://www.npmjs.com/package/react-devdotto) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) [![HitCount](http://hits.dwyl.com/genialkartik/react-devdotto.svg)](http://hits.dwyl.com/genialkartik/react-devdotto)
+[![NPM](https://img.shields.io/npm/v/react-devdotto.svg)](https://www.npmjs.com/package/react-devdotto) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) [![HitCount](http://hits.dwyl.io/genialkartik/react-devdotto.svg)](http://hits.dwyl.io/genialkartik/react-devdotto)
 
 ## Install
 
