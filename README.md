@@ -19,7 +19,7 @@ using YARN:
 
 ```jsx
 
-import { DevDotTo } from 'react-devdotto'
+import DevDotTo from 'react-devdotto'
 // username can be found on dev.to
 // remove coverimage by adding props 'coverimag={false}', default is true
 const App = () => {
