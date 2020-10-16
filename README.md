@@ -2,7 +2,8 @@
 
 > Embed your Posts on Dev.to into your React Project.
 
-[![NPM](https://img.shields.io/npm/v/react-devdotto.svg)](https://www.npmjs.com/package/react-devdotto) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/react-devdotto?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/react-devdotto)
+[![Open Issues](https://img.shields.io/github/issues/genialkartik/Macfolio?style=for-the-badge&logo=github)](https://github.com/genialkartik/Macfolio/issues) [![Forks](https://img.shields.io/github/forks/genialkartik/Macfolio?style=for-the-badge&logo=github)](https://github.com/genialkartik/Macfolio/network/members) ![Open Source Love](https://img.shields.io/badge/Open%20Source-%E2%99%A5-red?style=for-the-badge&logo=open-source-initiative)
 
 ## Install
 
