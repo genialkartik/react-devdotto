@@ -6,7 +6,7 @@
 [![Forks](https://img.shields.io/github/forks/genialkartik/react-devdotto?style=for-the-badge&logo=github)](https://github.com/genialkartik/react-devdotto) 
 ![Open Source Love](https://img.shields.io/badge/Open%20Source-%E2%99%A5-red?style=for-the-badge&logo=open-source-initiative)
 
-## Install
+## Installation
 
 using NPM:
 ```bash
