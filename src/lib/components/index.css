@@ -1,94 +1,115 @@
 /* Dev.to */
 
 .devcontainer {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
 }
 
 .devcontainer a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 .devitem {
-  position: relative;
-  width: 400px;
-  height: 90%;
-  border-radius: 8px;
-  border: 2px solid #7c7c7c;
-  background-color: #1A2634;
-  margin-bottom: 45px;
-  margin-right: 30px;
-  box-shadow: 2px 2px 2px #00000088;
+	position: relative;
+	width: 95%;
+	max-width: 400px;
+	height: 90%;
+	border-radius: 8px;
+	border: 2px solid #bbbbbb;
+	background-color: #1a2634;
+	margin-bottom: 45px;
+	box-shadow: 3px 3px 3px #00000088, rgba(255, 255, 255, 0.404) -1px -1px 2px;
 }
 
 .devblogimg {
-  position: relative;
-  width: 100%;
-  height: 60%;
-  border-radius: 7px 7px 0 0;
+	position: relative;
+	width: 100%;
+	height: 60%;
+	border-radius: 7px 7px 0 0;
+	border-bottom: solid black 1px;
 }
 
-.devdetails{
-  position: relative;
-  padding: 0px 40px;
-  text-align: left;
+.devdetails {
+	position: relative;
+	padding: 0px 40px;
+	text-align: left;
 }
 
 .devheading {
-  font-size: 1.4rem;
-  overflow: hidden;
-  color: #fff;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  /* number of lines to show */
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
+	font-size: 1.4rem;
+	overflow: hidden;
+	color: #fff;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	/* number of lines to show */
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
 }
 
 .devdescription {
-  font-size: 1rem;
-  color: black;
+	font-size: 1rem;
+	color: white;
 }
 
 .devtags {
-  position: relative;
-  color: #a09e9e;
-  overflow: hidden;
-  top: -10px;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
+	position: relative;
+	color: #a09e9e;
+	overflow: hidden;
+	top: -10px;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
 }
 
 .devreact {
-  display: flex;
-  flex-direction: row;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 .devicons {
-  width: 70%;
-  filter: opacity(0.6);
-  display: flex;
-  flex-direction: row;
+	width: 70%;
+	filter: opacity(0.6);
+	display: flex;
+	flex-direction: row;
 }
 
 .devicons p {
-  margin-right: 30px;
-  color: white;
+	margin-right: 30px;
+	color: white;
 }
 
 .devicons p span {
-  position: relative;
-  top: -3px;
+	position: relative;
+	top: -3px;
 }
 
 .postpublishdate {
-  color: white;
-  opacity: .6;
-  padding-top: 20px;
+	color: white;
+	opacity: .6;
+	padding-top: 20px;
 }
 
 .devopen:hover {
-  cursor: pointer;
+	cursor: pointer;
+}
+
+.light .devitem {
+	background: white;
+	border: solid 1px black;
+}
+
+.light .devheading {
+	color: black;
+}
+
+.light .postpublishdate,
+.light .devicons p {
+	color: black;
+}
+
+.light .devdescription {
+	color: black;
 }
