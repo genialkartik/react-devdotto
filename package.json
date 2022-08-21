@@ -36,5 +36,8 @@
     "dev.to"
   ],
   "author": "Kartik Tyagi <kartik9756@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
 }
