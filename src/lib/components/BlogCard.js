@@ -1,11 +1,12 @@
 import React from "react";
 
-export const BlogCard = ({ coverimage, item }) => {
+export const BlogCard = ({ hideTags, darkMode, coverimage, item }) => {
   return (
     <div
       className="devitem"
       style={{
-        backgroundColor: "#1a2634",
+        backgroundColor: darkMode ? "#1a2634" : "#eaeaea",
+        // backgroundColor: "#1a2634",
       }}
     >
       <a
@@ -29,8 +30,15 @@ export const BlogCard = ({ coverimage, item }) => {
               </div>
             ))}
           <div className="devdetails">
-            <h1 className="devheading">{item?.title}</h1>
-            {item?.tag_list?.length > 0 && (
+            <h1
+              className="devheading"
+              style={{
+                color: darkMode ? "white" : "black",
+              }}
+            >
+              {item?.title}
+            </h1>
+            {!hideTags && item?.tag_list?.length > 0 && (
               <div className="devtags">
                 {item?.tag_list?.map((tag) => (
                   <> #{tag} </>
@@ -39,7 +47,12 @@ export const BlogCard = ({ coverimage, item }) => {
             )}
             <div className="devreact">
               <div className="devicons">
-                <p>
+                <p
+                  style={{
+                    color: darkMode ? "white" : "black",
+                    filter: `opacity(${darkMode ? 0.6 : 0.8})`,
+                  }}
+                >
                   <svg
                     width="1.2em"
                     height="1.2em"
@@ -58,7 +71,12 @@ export const BlogCard = ({ coverimage, item }) => {
                     {item?.positive_reactions_count}
                   </span>
                 </p>
-                <p>
+                <p
+                  style={{
+                    color: darkMode ? "white" : "black",
+                    filter: `opacity(${darkMode ? 0.6 : 0.8})`,
+                  }}
+                >
                   <svg
                     width="1.2em"
                     height="1.2em"
@@ -75,7 +93,13 @@ export const BlogCard = ({ coverimage, item }) => {
                   <span className="postcomment"> {item?.comments_count}</span>
                 </p>
               </div>
-              <span className="postpublishdate">
+              <span
+                className="postpublishdate"
+                style={{
+                  color: darkMode ? "white" : "black",
+                  opacity: darkMode ? 0.6 : 0.8,
+                }}
+              >
                 {item?.readable_publish_date}
               </span>
             </div>

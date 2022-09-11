@@ -6,7 +6,13 @@ import DevDotTo from "./lib";
 class App extends Component {
   render() {
     return (
-      <DevDotTo username="genialkartik" coverimage={true} darkMode={false} />
+      <DevDotTo
+        username="genialkartik"
+        coverimage={true}
+        darkMode={false}
+        hideTags={false}
+        numberOfPosts={4}
+      />
     );
   }
 }
