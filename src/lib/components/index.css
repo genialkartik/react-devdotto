@@ -1,115 +1,156 @@
 /* Dev.to */
 
 .devcontainer {
-	position: relative;
-	display: flex;
-	flex-wrap: wrap;
-	gap: 30px;
+  background-color: #0a0a0a;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
 }
 
 .devcontainer a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .devitem {
-	position: relative;
-	width: 95%;
-	max-width: 400px;
-	height: 90%;
-	border-radius: 8px;
-	border: 2px solid #bbbbbb;
-	background-color: #1a2634;
-	margin-bottom: 45px;
-	box-shadow: 3px 3px 3px #00000088, rgba(255, 255, 255, 0.404) -1px -1px 2px;
+  position: relative;
+  width: 31%;
+  margin-right: 2%;
+  margin-bottom: 30px;
+  height: 100%;
+  border-radius: 8px;
+  border: 1px solid #bbbbbb;
 }
 
 .devblogimg {
-	position: relative;
-	width: 100%;
-	height: 60%;
-	border-radius: 7px 7px 0 0;
-	border-bottom: solid black 1px;
+  position: relative;
+  width: 100%;
+  height: 60%;
+  border-radius: 7px 7px 0 0;
+  border-bottom: solid black 1px;
 }
 
 .devdetails {
-	position: relative;
-	padding: 0px 40px;
-	text-align: left;
+  position: relative;
+  padding: 0px 40px;
+  text-align: left;
 }
 
 .devheading {
-	font-size: 1.4rem;
-	overflow: hidden;
-	color: #fff;
-	text-overflow: ellipsis;
-	display: -webkit-box;
-	/* number of lines to show */
-	-webkit-line-clamp: 1;
-	-webkit-box-orient: vertical;
+  font-size: 1.4rem;
+  overflow: hidden;
+  color: #fff;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  /* number of lines to show */
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
 
 .devdescription {
-	font-size: 1rem;
-	color: white;
+  font-size: 0.9rem;
+  padding: 0px 40px;
+  color: #a09e9e;
 }
 
 .devtags {
-	position: relative;
-	color: #a09e9e;
-	overflow: hidden;
-	top: -10px;
-	text-overflow: ellipsis;
-	display: -webkit-box;
-	-webkit-line-clamp: 1;
-	-webkit-box-orient: vertical;
+  position: relative;
+  color: #a09e9e;
+  overflow: hidden;
+  top: -10px;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
 
 .devreact {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .devicons {
-	width: 70%;
-	filter: opacity(0.6);
-	display: flex;
-	flex-direction: row;
+  width: 70%;
+  filter: opacity(0.6);
+  display: flex;
+  flex-direction: row;
 }
 
 .devicons p {
-	margin-right: 30px;
-	color: white;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  color: white;
 }
 
 .devicons p span {
-	position: relative;
-	top: -3px;
+  position: relative;
+  top: -3px;
 }
 
 .postpublishdate {
-	color: white;
-	opacity: .6;
-	padding-top: 20px;
+  color: white;
+  opacity: 0.6;
+  padding-top: 20px;
 }
 
 .devopen:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .light .devitem {
-	background: white;
-	border: solid 1px black;
+  background: white;
+  border: solid 1px black;
 }
 
 .light .devheading {
-	color: black;
+  color: black;
 }
 
 .light .postpublishdate,
 .light .devicons p {
-	color: black;
+  color: black;
 }
 
 .light .devdescription {
-	color: black;
+  color: black;
+}
+
+/* Skeleton */
+.demo:empty {
+  margin: auto;
+  width: 100%;
+  height: 200px; /* change height to see repeat-y behavior */
+
+  background-image: radial-gradient(
+      circle 50px at 50px 50px,
+      lightgray 99%,
+      transparent 0
+    ),
+    linear-gradient(
+      100deg,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.5) 50%,
+      rgba(255, 255, 255, 0) 80%
+    ),
+    linear-gradient(lightgray 20px, transparent 0),
+    linear-gradient(lightgray 20px, transparent 0),
+    linear-gradient(lightgray 20px, transparent 0),
+    linear-gradient(lightgray 20px, transparent 0);
+
+  background-repeat: repeat-y;
+
+  background-size: 100px 200px, /* circle */ 50px 200px,
+    /* highlight */ 150px 200px, 350px 200px, 300px 200px, 250px 200px;
+
+  background-position: 0 0, /* circle */ 0 0, /* highlight */ 120px 0,
+    120px 40px, 120px 80px, 120px 120px;
+
+  animation: shine 1s infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position: 0 0, 100% 0, /* move highlight to right */ 120px 0,
+      120px 40px, 120px 80px, 120px 120px;
+  }
 }
