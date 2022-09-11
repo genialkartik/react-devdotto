@@ -12,14 +12,13 @@
 
 .devitem {
   position: relative;
-  width: 550px;
-  height: 90%;
+  width: 31%;
+  min-width: 310px;
+  margin-right: 2%;
+  margin-bottom: 30px;
+  height: 100%;
   border-radius: 8px;
-  border: 2px solid #7c7c7c;
-  background-color: #1A2634;
-  margin-bottom: 45px;
-  margin-right: 70px;
-  box-shadow: 5px 5px 10px #00000088;
+  border: 1px solid #ccc;
 }
 
 .devblogimg {
@@ -27,9 +26,10 @@
   width: 100%;
   height: 60%;
   border-radius: 7px 7px 0 0;
+  border-bottom: solid black 1px;
 }
 
-.devdetails{
+.devdetails {
   position: relative;
   padding: 0px 40px;
   text-align: left;
@@ -47,13 +47,14 @@
 }
 
 .devdescription {
-  font-size: 1rem;
-  color: black;
+  font-size: 0.9rem;
+  padding: 0px 40px;
+  color: #a09e9e;
 }
 
 .devtags {
   position: relative;
-  color: #a09e9e;
+  color: #8e8e8e;
   overflow: hidden;
   top: -10px;
   text-overflow: ellipsis;
@@ -65,32 +66,86 @@
 .devreact {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 .devicons {
-  width: 81%;
-  filter: opacity(0.6);
+  width: 70%;
   display: flex;
   flex-direction: row;
 }
 
 .devicons p {
   margin-right: 30px;
-  color: white;
+  margin-bottom: 20px;
 }
 
 .devicons p span {
   position: relative;
   top: -3px;
-  margin-right: 3px;
-  margin-left: 7px;
 }
 
 .postpublishdate {
-  color: white;
-  opacity: .6;
   padding-top: 20px;
 }
 
 .devopen:hover {
   cursor: pointer;
+}
+
+.light .devitem {
+  background: white;
+  border: solid 1px black;
+}
+
+.light .devheading {
+  color: black;
+}
+
+.light .postpublishdate,
+.light .devicons p {
+  color: black;
+}
+
+.light .devdescription {
+  color: black;
+}
+
+/* Skeleton */
+.demo:empty {
+  margin: auto;
+  width: 100%;
+  height: 200px; /* change height to see repeat-y behavior */
+
+  background-image: radial-gradient(
+      circle 50px at 50px 50px,
+      lightgray 99%,
+      transparent 0
+    ),
+    linear-gradient(
+      100deg,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.5) 50%,
+      rgba(255, 255, 255, 0) 80%
+    ),
+    linear-gradient(lightgray 20px, transparent 0),
+    linear-gradient(lightgray 20px, transparent 0),
+    linear-gradient(lightgray 20px, transparent 0),
+    linear-gradient(lightgray 20px, transparent 0);
+
+  background-repeat: repeat-y;
+
+  background-size: 100px 200px, /* circle */ 50px 200px,
+    /* highlight */ 150px 200px, 350px 200px, 300px 200px, 250px 200px;
+
+  background-position: 0 0, /* circle */ 0 0, /* highlight */ 120px 0,
+    120px 40px, 120px 80px, 120px 120px;
+
+  animation: shine 1s infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position: 0 0, 100% 0, /* move highlight to right */ 120px 0,
+      120px 40px, 120px 80px, 120px 120px;
+  }
 }

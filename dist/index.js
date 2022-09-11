@@ -1,2 +1,2 @@
-import DevDotTo from "./components/DevDotTo";
+import DevDotTo from "./views/DevDotTo";
 export default DevDotTo;
