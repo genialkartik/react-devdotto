@@ -1,6 +1,6 @@
 {
   "name": "react-devdotto",
-  "version": "1.2.7",
+  "version": "2.0.0",
   "private": false,
   "scripts": {
     "start": "react-scripts start",
@@ -36,8 +36,5 @@
     "dev.to"
   ],
   "author": "Kartik Tyagi <kartik9756@gmail.com>",
-  "license": "ISC",
-  "dependencies": {
-    "axios": "^0.27.2"
-  }
+  "license": "ISC"
 }
