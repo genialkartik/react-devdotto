@@ -11,7 +11,7 @@ class App extends Component {
         coverimage={true}
         darkMode={false}
         hideTags={false}
-        numberOfPosts={4}
+        numberOfPosts={5}
       />
     );
   }
