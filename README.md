@@ -1,5 +1,8 @@
 # react-devdotto
 
+![Frame 1](https://user-images.githubusercontent.com/89431059/193343099-a70d21ec-6cd6-4211-990e-560607e2b7dd.png)
+
+
 > Embed your Posts on Dev.to into your React Project.
 
 [![NPM](https://img.shields.io/npm/v/react-devdotto?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/react-devdotto)
